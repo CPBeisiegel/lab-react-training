@@ -22,7 +22,7 @@ export function Rating(props) {
 
     return (
         <div className="rating">
-            <span>{star}</span>
+            <p>{star}</p>
         </div>
     )
 }
