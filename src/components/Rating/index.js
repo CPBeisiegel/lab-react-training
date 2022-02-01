@@ -3,9 +3,9 @@
 export function Rating(props) {
 
     /* Encontrei essa forma na interner mas não entendi como usar  */
-    const numberStars = Math.round(props.children) 
+    const numberEstrelas = Math.round(props.children) 
 
-  /*   const numberStars = Math.round(estrelas)
+  /*   const numberEstrelas = Math.round(estrelas)
 
     let estrelas = 5
      */
@@ -13,10 +13,10 @@ export function Rating(props) {
     let star = ""
 
     for (let i = 0; i < 5; i++) {
-        if( i < numberStars ) {
-            star += '★';
+        if( i < numberEstrelas ) {
+            star = star + '★';
         } else{
-            star += '☆';
+            star = star + '☆';
         }
     }
 
