@@ -1,0 +1,13 @@
+.greet{
+    border: 3px solid black;
+    margin: 10px;
+    width: 28%;
+    
+}
+
+.greet p{
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+
+}

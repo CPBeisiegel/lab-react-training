@@ -1,0 +1,12 @@
+.random{
+    border: 3px solid black;
+    margin: 10px;
+    width: 28%; 
+}
+
+.random p{
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+
+}
