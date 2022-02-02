@@ -2,13 +2,19 @@
 
 export function Rating(props) {
 
-    /* Encontrei essa forma na interner mas não entendi como usar  */
+    /* Solução Ale
+    
+    const numberOfStars = Math.round(props.children)
+
+    let star = "★"
+
+    star = star.repeat(numberOfStars).padEnd(5, '☆')
+    
+    */
+
+
     const numberEstrelas = Math.round(props.children) 
 
-  /*   const numberEstrelas = Math.round(estrelas)
-
-    let estrelas = 5
-     */
 
     let star = ""
 
@@ -22,7 +28,7 @@ export function Rating(props) {
 
     return (
         <div className="rating">
-            <p>{star}</p>
+            <span>{star}</span>
         </div>
     )
 }

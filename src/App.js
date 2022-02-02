@@ -7,6 +7,14 @@ import {BoxColor} from "./components/BoxColor";
 import {CreditCard} from "./components/CreditCard";
 import {Rating} from "./components/Rating";
 import {DriverCard} from "./components/DriverCard";
+import AlemaoSemOculos from './assets/images/maxence.png'
+import AlemaoComOculos from  './assets/images/maxence-glasses.png'
+import {ClickablePicture} from "./components/ClickablePicture";
+import {LikeButton} from "./components/LikeButton";
+import {Dice} from "./components/Dice";
+import {Carousel} from "./components/Carousel"
+import {NumbersTable} from "./components/NumbersTable";
+
 
 function App() {
   return (
@@ -111,6 +119,37 @@ function App() {
       }}
     />
 
+      <h2>ClickablePicture</h2>
+
+
+    <ClickablePicture
+      img={AlemaoSemOculos}
+      imgClicked={AlemaoComOculos}
+    />
+
+    <h2>LikeButton</h2>
+
+    <LikeButton />
+
+    <h2>Dice</h2>
+
+    <Dice />
+
+    <h2>Carousel</h2>
+
+    <Carousel
+  images={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+
+
+    <h2>NumbersTable</h2>
+
+    <NumbersTable limit={12} />
 
     </div>
   );
