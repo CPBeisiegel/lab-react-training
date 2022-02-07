@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import {BoxColor} from '../BoxColor'
+//import {BoxColor} from '../BoxColor'
 
 export function NumbersTable(props){
 
@@ -17,8 +17,8 @@ export function NumbersTable(props){
             } else {
                 element = {BoxColor = 'white'}
             } */
-            element = {backgroundColor: i%2 === 0 ? 'red' : 'white'}
-         array.push(<li element={element} add={i}>{i+1}</li>)
+            element = {backgroundColor: i%2 === 0 ? 'white' : 'red'}
+         array.push(<li style={element} add={i}>{i+1}</li>)
         }
         return array
     }

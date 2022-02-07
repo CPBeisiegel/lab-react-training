@@ -14,6 +14,7 @@ import {LikeButton} from "./components/LikeButton";
 import {Dice} from "./components/Dice";
 import {Carousel} from "./components/Carousel"
 import {NumbersTable} from "./components/NumbersTable";
+import {FaceBook} from "./components/Facebook";
 
 
 function App() {
@@ -150,6 +151,10 @@ function App() {
     <h2>NumbersTable</h2>
 
     <NumbersTable limit={12} />
+
+    <h2>Facebook Simple</h2>
+
+    <FaceBook />
 
     </div>
   );
